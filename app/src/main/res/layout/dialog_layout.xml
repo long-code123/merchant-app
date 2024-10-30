@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/textOrderIdDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order ID 123"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Food Name"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingEnd="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Price"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingEnd="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quantity"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingEnd="8dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewOrderDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button"
+            android:id="@+id/btnAcceptOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept Order"
+            android:padding="16dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/button"
+            android:id="@+id/btnCancelOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Order"
+            android:padding="16dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Name" />
+
+    <EditText
+        android:id="@+id/editFoodImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Image" />
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description" />
+
+    <EditText
+        android:id="@+id/editPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/button"
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+</LinearLayout>
